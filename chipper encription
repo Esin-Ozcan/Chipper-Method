@@ -1,0 +1,10 @@
+#We ask to user give us word or sentences
+user_word = input (" Please write a word or sentences.")  
+
+#Also we ask for our program a integer number
+user_shifter_method = int(input ("Can you give us a number for our program"))
+
+ascii=[ord(char) +user_shifter_method for char in user_word]
+
+encripted_word= ''.join((chr(value) for value in ascii))
+print(encripted_word)
